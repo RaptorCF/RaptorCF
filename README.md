@@ -1,20 +1,9 @@
-```
-print("Добро пожаловать в главное меню!")
-print("1. Новая игра")
-print("2. Загрузить игру")
-print("3. Настройки")
-print("4. Выход")
+import tkinter as tk
 
-выбор = input("Выберите опцию: ")
+root = tk.Tk()
+root.attributes('-fullscreen', True)
 
-if выбор == "1":
-    print("Начинаем новую игру...")
-elif выбор == "2":
-    print("Загружаем игру...")
-elif выбор == "3":
-    print("Открываем настройки...")
-elif выбор == "4":
-    print("До свидания!")
-else:
-    print("Пожалуйста, выберите корректную опцию.")
-```
+label = tk.Label(root, text="И зачем?", font=("Arial", 48))
+label.pack(expand=True)
+
+root.mainloop()
